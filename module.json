@@ -1,0 +1,11 @@
+{
+    "name": "api",
+    "title": "API",
+    "description": "<p>Provides access to the FVTT API through HTTP for external integration</p>",
+    "version": "0.1",
+    "author": "KaKaRoTo",
+    "scripts": [],
+    "styles": [],
+    "packs": [],
+    "minimumCoreVersion": "0.4.4"
+}
