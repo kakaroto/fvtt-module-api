@@ -14,6 +14,14 @@ The response you receive will be a json object with a boolean `success` field to
 
 For the API to work, you must be already logged in with the same browser, and all API calls will be sent as that user.
 
+# Examples
+
+Get the entire world data : 
+`https://example.com/modules/api/api.html?name=world`
+
+Set a playlist sound to playing (it's up to you to find the playlist and sound ids) :
+`https://example.com/modules/api/api.html?name=updatePlaylistSound&arg0={"parentId":"playlist_id", "data":{"_id":"sound_id", "playing": true}}&arg1={"embeddedName":"PlaylistSound"}`
+
 # Installation
 In the setup page of FVTT, Install the module by entering the following URL : `https://raw.githubusercontent.com/kakaroto/fvtt-module-api/master/module.json`
 

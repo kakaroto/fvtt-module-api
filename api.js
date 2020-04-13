@@ -1,19 +1,19 @@
 class APIModule {
     constructor() {
-        this.userId = null;
+        this.sessionId = null;
         this.socket = null;
         // Get the userId if logged in
         for (let cookie of document.cookie.split('; ')) {
             const [name, value] = cookie.split("=");
-            if (name === 'user') {
-                this.userId = decodeURIComponent(value);
+            if (name === 'session') {
+                this.sessionId = decodeURIComponent(value);
                 break;
             }
         }
         // Connect to the game socket, passing the userId as an initial data packet
         this.socket = io.connect(window.location.origin, {
             'reconnection': false,
-            query: { userId: this.userId }
+            query: { session: this.sessionId }
         });
     }
 
@@ -23,10 +23,11 @@ class APIModule {
     reply(result) {
         const body = document.getElementsByTagName("body")[0];
         body.textContent = JSON.stringify(result);
+        this.socket.close();
     }
 
     processRequest() {
-        if (!this.userId)
+        if (!this.sessionId)
             return this.error("User not logged in")
         let params = {}
         try {

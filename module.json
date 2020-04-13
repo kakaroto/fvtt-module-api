@@ -1,11 +1,14 @@
 {
     "name": "api",
-    "title": "API",
-    "description": "<p>Provides access to the FVTT API through HTTP for external integration</p>",
-    "version": "0.1",
+    "title": "HTTP API",
+    "description": "<p>Provides access to the FVTT API through HTTP for external integration</p><p>See README for details.</p>",
+    "version": "0.2",
     "author": "KaKaRoTo",
     "scripts": [],
     "styles": [],
     "packs": [],
-    "minimumCoreVersion": "0.4.4"
+    "url": "https://github.com/kakaroto/fvtt-module-api",
+    "manifest": "https://raw.githubusercontent.com/kakaroto/fvtt-module-api/master/module.json",
+    "download": "https://github.com/kakaroto/fvtt-module-api/archive/v0.2.zip",
+    "minimumCoreVersion": "0.5.0"
 }
