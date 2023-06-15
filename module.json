@@ -10,7 +10,7 @@
     "packs": [],
     "url": "https://github.com/kakaroto/fvtt-module-api",
     "manifest": "https://raw.githubusercontent.com/kakaroto/fvtt-module-api/master/module.json",
-    "download": "https://github.com/kakaroto/fvtt-module-api/archive/v0.4.0.zip",
+    "download": "https://github.com/kakaroto/fvtt-module-api/archive/v0.4.1.zip",
     "minimumCoreVersion": "0.8.0",
     "compatibleCoreVersion": "9",
     "compatibility": {
