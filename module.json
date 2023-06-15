@@ -3,7 +3,7 @@
     "name": "api",
     "title": "HTTP API",
     "description": "<p>Provides access to the FVTT API through HTTP for external integration</p><p>See README for details.</p>",
-    "version": "0.4.0",
+    "version": "0.4.1",
     "author": "KaKaRoTo",
     "scripts": [],
     "styles": [],
